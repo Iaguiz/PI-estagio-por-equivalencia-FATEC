@@ -40,8 +40,6 @@ body {
 .content-container {
     min-height: calc(100vh - 180px);
     padding: 40px;
-    display: flex;
-    justify-content: center;
 }
 
 .logo-container {
@@ -66,9 +64,7 @@ body {
 .section-rounded {
     border: 2px black solid;
     border-radius: 8px;
-    padding: 20px;
-    width: 100%;
-    max-width: 1000px;
+    padding: 20px
 }
 
 .input-container {
