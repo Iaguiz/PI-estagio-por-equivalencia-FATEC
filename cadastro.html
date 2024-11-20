@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cadastro.css">
     <title>Login - Estágio por Equivalência</title>
 </head>
 <body>
@@ -22,48 +22,67 @@
                     <h1 class="titulo">Faça seu cadastro</h1>
                     <form id="cadastro-form">
                         <div>
-                            <label class="label-container" for="input-test">Nome
-                                <input type="text" id="input-test" required>
+                            <label class="label-container" for="nome">Nome
+                                <input type="text" id="nome" required>
                             </label>
                         
-                            <label class="label-container" for="input-test">E-mail:
-                                <input type="email" id="input-test" required>
+                            <label class="label-container" for="email">E-mail:
+                                <input type="email" id="email" required>
                             </label>
                         </div>
 
                         <div>
-                            <label for="CPF">CPF:</label>
-                            <input type="text" id="CPF" required>
+                            <label class="label-container" for="CPF">CPF:
+                                <input type="text" id="CPF" required>
+                            </label>
                             
-                            <label for="RA">RA:</label>
-                            <input type="text" id="RA" required>
+                            <label class="label-container" for="RA">RA:
+                                <input type="text" id="RA" required>
+                            </label>
                         </div>
 
                         <div>
-                            <select name="unidade" id="unidades" required>
-                                <option value="atibaia">Atibaia</option>
-                                <option value="guarulhos">Guarulhos</option>
-                                <option value="braganca">Bragança Paulista</option>
-                            </select>
+                            <label class="label-container" for="unidade">
+                                <select name="unidade" id="unidade" required>
+                                    <option value="" selected disabled>Selecione a unidade</option>
+                                    <option value="atibaia">Atibaia</option>
+                                    <option value="guarulhos">Guarulhos</option>
+                                    <option value="braganca">Bragança Paulista</option>
+                                </select>
+                            </label>
 
-                            <select name="curso" id="cursos" required>
-                                <option value="dsm">DSM - Desenvolvimento de Software Multiplataforma</option>
-                                <option value="ads">ADS - Análise e Desenvolvimento de Sistemas</option>
-                            
-                            </select>
+                            <label class="label-container" for="cursos">
+                                <select name="curso" id="cursos" required>
+                                    <option value="" selected disabled>Selecione o curso</option>
+                                    <option value="dsm">DSM - Desenvolvimento de Software Multiplataforma</option>
+                                    <option value="ads">ADS - Análise e Desenvolvimento de Sistemas</option>
+                                </select>
+                            </label>
 
-                            <select name="semestre" id="semestres" required>
-                                <option value="sem1">1° SEMESTRE</option>
-                                <option value="sem2">2° SEMESTRE</option>
-                                <option value="sem3">3° SEMESTRE</option>
-                                <option value="sem4">4° SEMESTRE</option>
-                                <option value="sem5">5° SEMESTRE</option>
-                                <option value="sem6">6° SEMESTRE</option>
-                            
-                            </select>
+                            <label class="label-container" for="semestres">
+                                <select name="semestre" id="semestres" required>
+                                    <option value="" selected disabled>Selecione o semestre</option>
+                                    <option value="sem1">1° SEMESTRE</option>
+                                    <option value="sem2">2° SEMESTRE</option>
+                                    <option value="sem3">3° SEMESTRE</option>
+                                    <option value="sem4">4° SEMESTRE</option>
+                                    <option value="sem5">5° SEMESTRE</option>
+                                    <option value="sem6">6° SEMESTRE</option>
+                                </select>
+                            </label>
                         </div>
 
-                        <button type="submit">CRIAR CONTA</button>
+                        <div>
+                            <label class="label-container" for="senha">Senha:
+                                <input type="password" id="senha" required>
+                            </label>
+                            
+                            <label class="label-container" for="confirme">Confirme sua senha:
+                                <input type="password" id="confirme" required>
+                            </label>
+                        </div>
+
+                        <button class="button-primary" type="submit">CRIAR CONTA</button>
                     </form>
                 </section>
             </section>
