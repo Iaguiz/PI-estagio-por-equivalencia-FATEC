@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,6 @@
                 FATEC - Faculdade de Tecnologia
             </nav>
         </header>
-        <!-- essa section abaixo não faz parte do template -->
         <section class="content-container">
             <div class="h1-container">
                 <h1>Para continuar, entre em sua conta :)</h1>
@@ -34,7 +33,7 @@
                 </div>
                 <div class="btn-login-container">
                     <button class="button-primary">Entrar</button>
-                    <button class="button-secondary">Criar conta</button>
+                    <button class="button-secondary" onclick="handleCreateAccount()">Criar conta</button>
                     <button class="button-ghost">Esqueci minha senha</button>
                 </div>
             </section>
@@ -45,5 +44,18 @@
             </div>
         </footer>
     </div>
+    <div class="modal-container"  id="modal-container"  onclick="handleCreateAccount()">
+        <div class="modal-content">
+            <section class="section-rounded section-icon">
+                <h3>Você é:</h3>
+                <div class="btn-modal-container">
+                    <button class="button-square">Aluno</button>
+                    <button class="button-square">Orientador</button>
+                    <button class="button-square">Empregador</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>

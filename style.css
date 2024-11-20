@@ -105,6 +105,14 @@ body {
     min-width: 250px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+.button-primary:hover {
+    background-color: #7a0202;
+}
+
 .button-secondary {
     padding: 16px 48px;
     color: white;
@@ -114,6 +122,10 @@ body {
     background-color: #a3a3a3;
     border-radius: 22px;
     min-width: 250px;
+}
+
+.button-secondary:hover {
+    background-color: #747474;
 }
 
 .button-square {
@@ -126,6 +138,10 @@ body {
     border: 2px black solid;
 }
 
+.button-square:hover {
+    background-color: #e2e2e2;
+}
+
 .button-ghost {
     padding: 16px 48px;
     font-weight: bold;
@@ -133,6 +149,10 @@ body {
     background-color: white;
     border: none;
     min-width: 250px;
+}
+
+.button-ghost:hover {
+    text-decoration: underline;
 }
 
 .avatar-container {
@@ -171,5 +191,38 @@ h1 {
     .button-ghost {
         padding: 0;
         font-size: 11px;
+    }
+}
+
+.modal-container {
+    display: none;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #353535d5;
+    justify-content: center;
+    align-items: center;
+
+    section {
+        background-color: white;    
+
+        h3 {
+            margin-bottom: 8px;
+        }
+
+        .btn-modal-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            button {
+                background-color: #e4e4e4;
+            }
+
+            button:hover {
+                background-color: #b9b9b9;
+            }
+        }
     }
 }
