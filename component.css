@@ -96,6 +96,14 @@ body {
     min-width: 250px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+.button-primary:hover {
+    background-color: #7a0202;
+}
+
 .button-secondary {
     padding: 16px 48px;
     color: white;
@@ -105,6 +113,10 @@ body {
     background-color: #a3a3a3;
     border-radius: 22px;
     min-width: 250px;
+}
+
+.button-secondary:hover {
+    background-color: #747474;
 }
 
 .button-square {
@@ -117,6 +129,10 @@ body {
     border: 2px black solid;
 }
 
+.button-square:hover {
+    background-color: #e2e2e2;
+}
+
 .button-ghost {
     padding: 16px 48px;
     font-weight: bold;
@@ -124,6 +140,10 @@ body {
     background-color: white;
     border: none;
     min-width: 250px;
+}
+
+.button-ghost:hover {
+    text-decoration: underline;
 }
 
 .avatar-container {
