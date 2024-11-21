@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./cadastroOrientador.css">
+    <link rel="stylesheet" href="./cadastroEmpregador.css">
     <link rel="stylesheet" href="../component.css">
     <title>Cadastro - Estágio por Equivalência</title>
 </head>
@@ -41,28 +41,7 @@
                                 <input type="text" id="cargo" onchange="handleCargo()" required>
                             </label>
                         </div>
-
-                        <div id="form2">
-                            <label class="label-container" for="unidade">
-                                <select name="unidade" id="unidade" onchange="handleUnidade()" required>
-                                    <option value="" selected disabled>Selecione a unidade</option>
-                                    <option value="atibaia">Atibaia</option>
-                                    <option value="guarulhos">Guarulhos</option>
-                                    <option value="braganca">Bragança Paulista</option>
-                                </select>
-                            </label>
-
-                            <label class="label-container" for="curso">
-                                <select name="curso" id="curso" onchange="handleCurso()" required>
-                                    <option value="" selected disabled>Selecione o curso</option>
-                                    <option value="dsm">DSM - Desenvolvimento de Software Multiplataforma</option>
-                                    <option value="ads">ADS - Análise e Desenvolvimento de Sistemas</option>
-                                </select>
-                            </label>
-
-                            
-                        </div>
-
+                        
                         <div id="form1">
                             <label class="label-container" for="senha">Senha:
                                 <input type="password" id="senha" onchange="handleSenha()" required>
@@ -72,6 +51,17 @@
                                 <input type="password" id="confirme" onchange="handleConfirme()" required>
                             </label>
                         </div>
+                        
+                        <div id="form1">
+                            <label class="label-container" for="CNPJ">CNPJ:
+                                <input type="text" id="CNPJ" onchange="handleCNPJ()" required>
+                            </label>
+                            
+                            <label class="label-container" for="IE">Inscrição estadual:
+                                <input type="text" id="IE" onchange="handleIE()" required>
+                            </label>                     
+                        </div>
+
 
                         <div id="botoes">
                             <button class="button-primary" type="submit">CRIAR CONTA</button>
@@ -87,6 +77,6 @@
             </div>
         </footer>
     </div>
-    <script src="./cadastroOrientador.js"></script>
+    <script src="./cadastroEmpregador.js"></script>
 </body>
 </html>
