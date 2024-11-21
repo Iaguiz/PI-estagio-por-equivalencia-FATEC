@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./cadastroAluno.css">
+    <link rel="stylesheet" href="./cadastroOrientador.css">
     <link rel="stylesheet" href="../component.css">
     <title>Login - Estágio por Equivalência</title>
 </head>
@@ -20,7 +20,7 @@
         <main>
             <section class="content-container">
                 <section class="section-rounded">
-                    <h1 class="titulo">Aluno, faça seu cadastro</h1>
+                    <h1 class="titulo">Orientador, faça seu cadastro</h1>
                     <form id="cadastro-form">
                         <div id="form1">
                             <label class="label-container" for="nome">Nome
@@ -33,12 +33,12 @@
                         </div>
 
                         <div id="form1">
-                            <label class="label-container" for="CPF">CPF:
+                            <label class="label-container" for="cargo">CPF:
                                 <input type="text" id="CPF" onchange="handleCPF()" required>
                             </label>
                             
-                            <label class="label-container" for="RA">RA:
-                                <input type="text" id="RA" onchange="handleRA()" required>
+                            <label class="label-container" for="cargo">Cargo:
+                                <input type="text" id="cargo" onchange="handleCargo()" required>
                             </label>
                         </div>
 
@@ -60,17 +60,7 @@
                                 </select>
                             </label>
 
-                            <label class="label-container" for="semestre">
-                                <select name="semestre" id="semestre" onchange="handleSemestre()" required>
-                                    <option value="" selected disabled>Selecione o semestre</option>
-                                    <option value="sem1">1° SEMESTRE</option>
-                                    <option value="sem2">2° SEMESTRE</option>
-                                    <option value="sem3">3° SEMESTRE</option>
-                                    <option value="sem4">4° SEMESTRE</option>
-                                    <option value="sem5">5° SEMESTRE</option>
-                                    <option value="sem6">6° SEMESTRE</option>
-                                </select>
-                            </label>
+                            
                         </div>
 
                         <div id="form1">
@@ -97,6 +87,6 @@
             </div>
         </footer>
     </div>
-    <script src="./cadastroAluno.js"></script>
+    <script src="./cadastroOrientador.js"></script>
 </body>
 </html>

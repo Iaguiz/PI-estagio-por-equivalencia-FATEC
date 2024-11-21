@@ -16,9 +16,9 @@ function handleCPF(){
     console.log(CPF);
 }
 
-function handleRA(){
-    const RA = document.getElementById('RA').value;
-    console.log(RA);
+function handleCargo(){
+    const cargo = document.getElementById('cargo').value;
+    console.log(cargo);
 }
 
 function handleUnidade(){
@@ -29,11 +29,6 @@ function handleUnidade(){
 function handleCurso(){
     const curso = document.getElementById('curso').value;
     console.log(curso);
-}
-
-function handleSemestre(){
-    const semestre = document.getElementById('semestre').value;
-    console.log(semestre);
 }
 
 function handleSenha(){
