@@ -3,3 +3,15 @@ const handleCreateAccount = () => {
 
     modal.style.display =  (modal.style.display === 'none' || !modal.style.display) ? 'flex' : 'none';
 }
+
+function mudarPag(pathParam1, pathParam2){
+    const URLAtual = window.location.href.split('/');
+    
+    URLAtual[URLAtual.length - 2] = pathParam1;
+    URLAtual[URLAtual.length - 1] = pathParam2;
+
+    const urlFinal = URLAtual.join('/')  
+
+
+    window.location = urlFinal;
+}
