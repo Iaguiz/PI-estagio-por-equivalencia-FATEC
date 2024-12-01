@@ -36,29 +36,6 @@
 }
 
 
-@media (max-width: 800px) {
-    form{
-        padding: 0px 16px;
-    }
-    #form1{
-        flex-direction: column;
-        gap: 10px;
-        margin: 10px 0px;
-    }
-    #form2{
-        flex-direction: column;
-        gap: 10px;
-        margin: 10px 0px;
-    }    
-    button{
-        width: 100%;
-        min-width: auto;   
-    }
-    #botoes{
-        margin: 42px 0px;
-    }
-    
-}
 
 .backbtn-container {
     max-width: 1000px;
@@ -87,5 +64,43 @@
     justify-content: center;
     text-align: center;
     margin-right: 10px;
+}
+
+@media (max-width: 1000px) {
+    form{
+        padding: 0px 16px;
+    }
+    #form1{
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0px;
+    }
+    #form2{
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0px;
+    }    
+    #botoes{
+        margin: 42px 0px;
+        min-width: auto !important;  
+    }
+    #botao{
+        width: 100%;
+        min-width: auto !important;   
+    }
+    
+}
+@media (max-width: 350px){
+    #super-container{
+        padding-inline: 0px;
+        padding-top: 0px;
+    }
+    #container-borda{
+        border: none;
+        padding: 0px;
+    }
+    .backbtn-container{
+        padding: 32px;
+    }
 }
 

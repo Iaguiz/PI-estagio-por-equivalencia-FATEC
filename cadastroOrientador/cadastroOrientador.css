@@ -1,7 +1,14 @@
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .section-rounded {
     max-width: 1000px;
-    margin: auto;
 }
+
 
 .titulo{
     text-align: center;
