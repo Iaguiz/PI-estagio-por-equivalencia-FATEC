@@ -18,8 +18,8 @@
             </nav>
         </header>
         <!-- essa section abaixo não faz parte do template -->
-        <section class="content-container">
-            <div class="indentifier-container">
+        <section class="content-container" id="super-container">
+            <div class="indentifier-container" >
                 <button class="Voltar" onclick="changePage('login','index.html')">
                     <img src="../assets/right-arrow.png" alt="seta de voltar">
                     <h1>Sair</h1>
@@ -29,19 +29,19 @@
                         <h1>Olá, aluno</h1>
                         <p>RA: 99999999</p>
                     </div>
-                    <div class="avatar-container">
+                    <div class="avatar-container" onclick="changePage('perfil','perfil.html')">
                         <img src="../assets/user-avatar.png" alt="user-avatar">
                     </div>
                 </div>
             </div>
-            <section class="section-rounded card-container">
-                <section class="section-rounded section-icon card-req" onclick="criarSolicitacao()">
+            <section class="section-rounded card-container" id="container-geral">
+                <section class="section-rounded section-icon card-req" id="opcao" onclick="criarSolicitacao()">
                     <div>
                         <img src="../assets/request.png" alt="user-avatar">
                     </div>
                     <h2>Solicitar</h2>
                 </section>
-                <section class="section-rounded section-icon card-req">
+                <section class="section-rounded section-icon card-req" id="opcao">
                     <div>
                         <img src="../assets/search.png" alt="user-avatar">
                     </div>
@@ -51,7 +51,7 @@
         </section>
     
         <footer class="footer-container">
-            <div class="logo-footer-container">
+            <div class="logo-footer-container" id="footer-geral">
                 <img src="../assets/logo-rodape-governo-do-estado-sp.png" alt="logo-footer-gov-sp">
             </div>
         </footer>

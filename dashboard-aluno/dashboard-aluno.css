@@ -41,6 +41,7 @@
 
 .indentifier-container {
     display: flex;
+    min-width: 1000px;
     width: 50%;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +67,6 @@
 .card-container {
     display: flex;
     gap: 32px;
-    
 }
 
 .card-req {
@@ -78,5 +78,99 @@
 
     img {
         width: 60px;
+    }
+}
+
+.card-req:hover{
+    scale: 105%;
+    background-color: rgba(185, 185, 185, 0.5);
+}
+
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(53, 53, 53, 0.85); 
+    justify-content: center;
+    align-items: center;
+    height: 100%;  
+    width: 100%;
+    z-index: 1000;
+
+    section {
+        background-color: white;    
+
+        h3 {
+            margin-bottom: 8px;
+        }
+
+        .btn-modal-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            button {
+                background-color: #e4e4e4;
+            }
+
+            button:hover {
+                scale: 105%;
+                background-color: #b9b9b9;
+            }
+        }
+    }
+}
+#container-geral{
+    min-width: 1000px;
+}
+@media (max-width: 1000px){
+
+    .indentifier-container{
+        
+        min-width: 0px;
+    }
+
+    #container-geral{
+        border: none;
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        min-width: 0px;
+    }
+    #opcao{
+        min-width: 100%;
+        min-height: 300px;
+    }
+    .indentifier-container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .indentifier-container{
+        padding: 24px 0px;
+    }
+
+    
+    #container-geral{
+        margin: 0px;
+        margin-bottom: 20px;
+        padding: 0px;
+    }
+
+    #super-container{
+        padding-inline: 48px;
+        padding-block: 0px;
+    }
+
+    #perfil-text{
+        display: none;
+    }
+}
+@media (max-width: 310px){
+    #opcao{
+        min-width: 180px;
+        padding: 10px;
     }
 }
