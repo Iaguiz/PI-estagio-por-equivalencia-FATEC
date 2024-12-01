@@ -146,9 +146,40 @@ button:hover {
     text-decoration: underline;
 }
 
+.Voltar{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    gap: 8px;
+}
+
+.perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#perfil-text{
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 10px;
+    
+    p {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}
+
 .avatar-container {
     img{
-        width: 60px;
+        width: 42px;
     };
 }
 

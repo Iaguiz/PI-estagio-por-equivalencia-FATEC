@@ -19,10 +19,12 @@
         </header>
         <main>
             <section class="content-container">
-                <button class="Voltar" onclick="changePage('login','index.html')">
-                    <h1 id="seta">&larr; </h1>
-                    <h1>Voltar</h1>
-                </button>
+                <div class="backbtn-container">
+                    <button class="Voltar" onclick="changePage('login','index.html')">
+                        <img src="../assets/right-arrow.png" alt="seta de voltar">
+                        <h1>Voltar</h1>
+                    </button>
+                </div>
                 <section class="section-rounded">
                     <h1 class="titulo">Aluno, faça seu cadastro</h1>
                     <form id="cadastro-form">
@@ -111,5 +113,6 @@
     </div>
     <script src="./cadastroAluno.js"></script>
     <script src="../common/handleField.js"></script>
+    <script src="../common/changePag.js"></script>
 </body>
 </html>

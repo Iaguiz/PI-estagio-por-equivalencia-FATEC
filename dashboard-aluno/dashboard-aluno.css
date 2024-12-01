@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .logo-container {
@@ -46,8 +45,14 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    
     padding: 05px 32px 16px; 
+    button {
+        img {
+            transform: rotate(180deg);
+            width: 18px;
+        }
+        text-transform: none;
+    }    
 }
 
 .card-container{
@@ -58,36 +63,6 @@
     justify-content: center;
 }
 
-.Voltar{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: white;
-    border: none;
-    min-width: 250px;
-}
-#seta{
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 42px;
-}
-.perfil{
-    display: flex;
-}
-
-#perfil-text{
-    height: fit-content;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-right: 10px;
-}
 .card-container {
     display: flex;
     gap: 32px;
@@ -100,4 +75,8 @@
     align-items: center;
     justify-content: center;
     min-width: 250px;
+
+    img {
+        width: 60px;
+    }
 }
