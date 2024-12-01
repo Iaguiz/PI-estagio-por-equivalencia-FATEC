@@ -1,10 +1,22 @@
 
 
 
-function handleName(){
-    const nome = document.getElementById('nome').value;
-    console.log(nome);
+function handleName(e){
+    const input = e.value;
+    const errorNome = document.getElementById('errorNome');
+    console.log(e);
+    const errorField = e.parentElement.childNode.find((element)=>{
+        if(element.id === 'ErrorNome'){
+            return;
+        }
+    })
+    if(input.length < 1){
+        alert("Por favor, preencha os campos obrigatórios");
+        errorField.innerText="* Este campo é obrigatório";
+        errorField.style.display = 'flex';
+    }    
 }
+
 
 function handleEmail(){
     const email = document.getElementById('email').value;

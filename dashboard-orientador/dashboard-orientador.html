@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dashboard-orientador.css">
-    <title>Dashboard-aluno</title>
+    <link rel="stylesheet" href="../component.css">
+    <title>Dashboard-orientador</title>
 </head>
 <body>
     <div class="container">
@@ -19,9 +20,17 @@
         <!-- essa section abaixo não faz parte do template -->
         <section class="content-container">
             <div class="indentifier-container">
-                <h1>Olá, orientador</h1>
-                <div class="avatar-container">
-                    <img src="../assets/user-avatar.png" alt="user-avatar">
+                <button class="Voltar" onclick="changePage('login','index.html')">
+                    <h1 id="seta">&larr; </h1>
+                    <h1>Voltar</h1>
+                </button>
+                <div class="perfil">
+                    <div id="perfil-text">
+                        <h1>Olá, orientador</h1>
+                    </div>
+                    <div class="avatar-container">
+                        <img src="../assets/user-avatar.png" alt="user-avatar">
+                    </div>
                 </div>
             </div>
             <section class="section-rounded card-container">
@@ -45,5 +54,6 @@
             </div>
         </footer>
     </div>
+    <script src="../common/changePag.js"></script>
 </body>
 </html>

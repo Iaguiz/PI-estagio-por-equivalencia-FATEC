@@ -19,32 +19,40 @@
         </header>
         <main>
             <section class="content-container">
+                <div class="indentifier-container">
+                    <button class="Voltar" onclick="changePage('login','index.html')">
+                        <h1 id="seta">&larr; </h1>
+                        <h1>Voltar</h1>
+                    </button>
+                </div>
                 <section class="section-rounded">
                     <h1 class="titulo">Aluno, faça seu cadastro</h1>
                     <form id="cadastro-form">
                         <div id="form1">
-                            <label class="label-container" for="nome">Nome
-                                <input type="text" id="nome" onchange="handleName()" required>
+                            <label id="nome" class="label-container" for="nome">Nome
+                                <input type="text" id="nome" onblur="handleName(this)">
+                                <p id="errorNome"></p>
                             </label>
                         
-                            <label class="label-container" for="email">E-mail:
-                                <input type="email" id="email" onchange="handleEmail()" required>
+                            <label id="email" class="label-container" for="email">E-mail:
+                                <input type="email" id="email" onblur="handleEmail()">
+                                <p id="errorNome"></p>
                             </label>
                         </div>
 
                         <div id="form1">
                             <label class="label-container" for="CPF">CPF:
-                                <input type="text" id="CPF" onchange="handleCPF()" required>
+                                <input type="text" id="CPF" onblur="handleCPF()">
                             </label>
                             
                             <label class="label-container" for="RA">RA:
-                                <input type="text" id="RA" onchange="handleRA()" required>
+                                <input type="text" id="RA" onblur="handleRA()">
                             </label>
                         </div>
 
                         <div id="form2">
                             <label class="label-container" for="unidade">
-                                <select name="unidade" id="unidade" onchange="handleUnidade()" required>
+                                <select name="unidade" id="unidade" onchange="handleUnidade()">
                                     <option value="" selected disabled>Selecione a unidade</option>
                                     <option value="atibaia">Atibaia</option>
                                     <option value="guarulhos">Guarulhos</option>
@@ -53,7 +61,7 @@
                             </label>
 
                             <label class="label-container" for="curso">
-                                <select name="curso" id="curso" onchange="handleCurso()" required>
+                                <select name="curso" id="curso" onchange="handleCurso()">
                                     <option value="" selected disabled>Selecione o curso</option>
                                     <option value="dsm">DSM - Desenvolvimento de Software Multiplataforma</option>
                                     <option value="ads">ADS - Análise e Desenvolvimento de Sistemas</option>
@@ -61,7 +69,7 @@
                             </label>
 
                             <label class="label-container" for="semestre">
-                                <select name="semestre" id="semestre" onchange="handleSemestre()" required>
+                                <select name="semestre" id="semestre" onchange="handleSemestre()">
                                     <option value="" selected disabled>Selecione o semestre</option>
                                     <option value="sem1">1° SEMESTRE</option>
                                     <option value="sem2">2° SEMESTRE</option>
@@ -75,17 +83,16 @@
 
                         <div id="form1">
                             <label class="label-container" for="senha">Senha:
-                                <input type="password" id="senha" onchange="handleSenha()" required>
+                                <input type="password" id="senha" onchange="handleSenha()">
                             </label>
                             
                             <label class="label-container" for="confirme">Confirme sua senha:
-                                <input type="password" id="confirme" onchange="handleConfirme()" required>
+                                <input type="password" id="confirme" onchange="handleConfirme()">
                             </label>
                         </div>
 
                         <div id="botoes">
-                            <button class="button-primary" type="submit">CRIAR CONTA</button>
-                            <button class="button-secondary" type="submit">VOLTAR</button>
+                            <button class="button-primary">CRIAR CONTA</button>
                         </div>
                     </form>
                 </section>

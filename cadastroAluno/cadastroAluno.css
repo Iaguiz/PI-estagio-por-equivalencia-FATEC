@@ -59,3 +59,42 @@
     }
     
 }
+
+.Voltar{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: white;
+    border: none;
+    min-width: 250px;
+}
+
+#seta{
+    height: 30px;
+}
+.indentifier-container {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    margin-left: 180px;
+    padding: 05px 32px 16px; 
+}
+.perfil{
+    display: flex;
+}
+#perfil-text{
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#errorNome{
+    color: red;
+    display: none;
+}
