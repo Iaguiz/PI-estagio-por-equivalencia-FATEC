@@ -22,19 +22,20 @@
             </div>
             <section class="section-rounded">
                 <div class="input-login-container">
-                    <label class="label-container" for="input-test">
+                    <label class="label-container" for="email">
                         E-mail
-                        <input type="email" id="input-test" placeholder="email@email.com.br">
+                        <input type="email" id="email" placeholder="email@email.com.br">
                     </label>   
-                    <label class="label-container" for="input-test">
+                    <label class="label-container" for="senha">
                         Senha
-                        <input type="password" id="input-test" placeholder="************">
+                        <input type="password" id="senha" placeholder="************">
                     </label>   
                 </div>
                 <div class="btn-login-container">
-                    <button class="button-primary">Entrar</button>
+                    <p id="errorNome"></p>
+                    <button class="button-primary" onclick="validadeLogin()">Entrar</button>
                     <button class="button-secondary" onclick="handleCreateAccount()">Criar conta</button>
-                    <button class="button-ghost">Esqueci minha senha</button>
+                    <!-- <button class="button-ghost">Esqueci minha senha</button> -->
                 </div>
             </section>
         </section>

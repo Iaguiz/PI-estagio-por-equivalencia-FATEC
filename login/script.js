@@ -15,3 +15,19 @@ function mudarPag(pathParam1, pathParam2){
 
     window.location = urlFinal;
 }
+
+function validadeLogin(){
+    const email = document.getElementById('email').value;
+    const senha = document.getElementById('senha').value;
+    const error = document.getElementById('errorNome');
+
+    if(email === 'aluno@fatec.sp.gov.br' && senha === 'aluno123'){
+        mudarPag('dashboard-aluno','dashboard-aluno.html');
+        return;
+    }
+    
+    error.innerText = "Usuário não encontrado";
+    error.style.display = 'flex';
+    
+    
+}

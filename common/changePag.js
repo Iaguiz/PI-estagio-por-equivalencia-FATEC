@@ -6,3 +6,4 @@ const changePage = (pathParam1, pathParam2) => {
 
     window.location = URLAtual.join('/');  
 }
+

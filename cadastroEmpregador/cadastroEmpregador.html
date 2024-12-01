@@ -19,53 +19,64 @@
         </header>
         <main>
             <section class="content-container">
+                <button class="Voltar" onclick="changePage('login','index.html')">
+                    <h1 id="seta">&larr; </h1>
+                    <h1>Voltar</h1>
+                </button>
                 <section class="section-rounded">
                     <h1 class="titulo">Empregador, faça seu cadastro</h1>
                     <form id="cadastro-form">
                         <div id="form1">
                             <label class="label-container" for="nome">Nome
-                                <input type="text" id="nome" onchange="handleName()" required>
+                                <input type="text" id="nome" onblur="handleField(this)">
+                                <p id="errorNome"></p>
                             </label>
                         
                             <label class="label-container" for="email">E-mail:
-                                <input type="email" id="email" onchange="handleEmail()" required>
+                                <input type="email" id="email" onblur="handleField(this)">
+                                <p id="errorNome"></p>
                             </label>
                         </div>
 
                         <div id="form1">
                             <label class="label-container" for="CPF">CPF:
-                                <input type="text" id="CPF" onchange="handleCPF()" required>
+                                <input type="text" id="CPF" onchange="handleCPF()">
+                                <p id="errorNome"></p>
                             </label>
                             
                             <label class="label-container" for="cargo">Cargo:
-                                <input type="text" id="cargo" onchange="handleCargo()" required>
+                                <input type="text" id="cargo" onchange="handleCargo()">
+                                <p id="errorNome"></p>
                             </label>
                         </div>
                         
                         <div id="form1">
                             <label class="label-container" for="senha">Senha:
-                                <input type="password" id="senha" onchange="handleSenha()" required>
+                                <input type="password" id="senha" onchange="handleSenha()">
+                                <p id="errorNome"></p>
                             </label>
                             
                             <label class="label-container" for="confirme">Confirme sua senha:
-                                <input type="password" id="confirme" onchange="handleConfirme()" required>
+                                <input type="password" id="confirme" onchange="handleConfirme()">
+                                <p id="errorNome"></p>
                             </label>
                         </div>
                         
                         <div id="form1">
                             <label class="label-container" for="CNPJ">CNPJ:
-                                <input type="text" id="CNPJ" onchange="handleCNPJ()" required>
+                                <input type="text" id="CNPJ" onchange="handleCNPJ()">
+                                <p id="errorNome"></p>
                             </label>
                             
                             <label class="label-container" for="IE">Inscrição estadual:
-                                <input type="text" id="IE" onchange="handleIE()" required>
+                                <input type="text" id="IE" onchange="handleIE()">
+                                <p id="errorNome"></p>
                             </label>                     
                         </div>
 
 
                         <div id="botoes">
                             <button class="button-primary" type="submit">CRIAR CONTA</button>
-                            <button class="button-secondary">VOLTAR</button>
                         </div>
                     </form>
                 </section>
@@ -78,5 +89,6 @@
         </footer>
     </div>
     <script src="./cadastroEmpregador.js"></script>
+    <script src="../common/handleField.js"></script>
 </body>
 </html>

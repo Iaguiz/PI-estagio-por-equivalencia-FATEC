@@ -156,3 +156,8 @@ button:hover {
     width: fit-content;
     padding: 42px;
 }
+
+#errorNome{
+    color: red;
+    display: hidden;
+}
