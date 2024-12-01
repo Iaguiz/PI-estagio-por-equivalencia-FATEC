@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./perfil.css" />
+    <link rel="stylesheet" href="../component.css" />
+    <title>Cadastro - Estágio por Equivalência</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-container">
+        <div class="logo-container">
+          <img src="../assets/logo_fatec_cor.png" alt="logo-fatec" />
+        </div>
+        <nav class="nav-container">FATEC - Faculdade de Tecnologia</nav>
+      </header>
+      <main>
+        <section class="content-container">
+          <div class="backbtn-container">
+            <button class="Voltar" onclick="changePage('login','index.html')">
+              <img src="../assets/right-arrow.png" alt="seta de voltar" />
+              <h1>Voltar</h1>
+            </button>
+          </div>
+          <section class="section-rounded">
+            <h1 class="title">Perfil</h1>
+            <form id="profile-form">
+              <div id="inputs-container">
+                <div class="inputs">
+                    <label id="nome" class="label-container" for="nome"
+                  >Nome
+                  <input type="text" id="nome" onblur="handleField(this)" />
+                  <p id="errorNome"></p>
+                </label>
+
+                <label id="email" class="label-container" for="email"
+                  >E-mail:
+                  <input type="email" id="email" onblur="handleField(this)" />
+                  <p id="errorNome"></p>
+                </label>
+
+                <label class="label-container" for="CPF"
+                  >CPF:
+                  <input type="text" id="CPF" onblur="handleField(this)" />
+                  <p id="errorNome"></p>
+                </label>
+
+                <label class="label-container" for="RA"
+                  >RA:
+                  <input type="text" id="RA" onblur="handleField(this)" />
+                  <p id="errorNome"></p>
+                </label>
+                </div>
+                <div id="button">
+                    <button class="button-primary">Excluir conta</button>
+                </div>
+              </div>
+
+              <div id="selects-container">
+                <div class="selects-img-container">
+                    <img
+                  id="profile-user"
+                  src="../assets/user.png"
+                  alt=""
+                  srcset=""
+                />
+                </div>
+
+                <div class="selects-inputs-container">
+                    <label class="label-container" for="unidade">
+                        Unidade
+                      <select
+                        name="unidade"
+                        id="unidade"
+                        onblur="handleField(this)"
+                      >
+                        <option value="" selected disabled>
+                          Selecione a unidade
+                        </option>
+                        <option value="atibaia">Atibaia</option>
+                        <option value="guarulhos">Guarulhos</option>
+                        <option value="braganca">Bragança Paulista</option>
+                      </select>
+                      <p id="errorNome"></p>
+                    </label>
+    
+                    <label class="label-container" for="curso">
+                        Curso
+                      <select name="curso" id="curso" onblur="handleField(this)">
+                        <option value="" selected disabled>
+                          Selecione o curso
+                        </option>
+                        <option value="dsm">
+                          DSM - Desenvolvimento de Software Multiplataforma
+                        </option>
+                        <option value="ads">
+                          ADS - Análise e Desenvolvimento de Sistemas
+                        </option>
+                      </select>
+                      <p id="errorNome"></p>
+                    </label>
+    
+                    <label class="label-container" for="semestre">
+                        Semestre
+                      <select
+                        name="semestre"
+                        id="semestre"
+                        onblur="handleField(this)"
+                      >
+                        <option value="" selected disabled>
+                          Selecione o semestre
+                        </option>
+                        <option value="sem1">1° SEMESTRE</option>
+                        <option value="sem2">2° SEMESTRE</option>
+                        <option value="sem3">3° SEMESTRE</option>
+                        <option value="sem4">4° SEMESTRE</option>
+                        <option value="sem5">5° SEMESTRE</option>
+                        <option value="sem6">6° SEMESTRE</option>
+                      </select>
+                      <p id="errorNome"></p>
+                    </label>
+                </div>
+
+                <div id="button-responsive">
+                    <button class="button-primary">Excluir conta</button>
+                </div>
+              </div>
+            </form>
+          </section>
+        </section>
+      </main>
+      <footer class="footer-container">
+        <div class="logo-footer-container">
+          <img
+            src="../assets/logo-rodape-governo-do-estado-sp.png"
+            alt="logo-footer-gov-sp"
+          />
+        </div>
+      </footer>
+    </div>
+    <script src="./perfil.js"></script>
+    <script src="../common/handleField.js"></script>
+    <script src="../common/changePag.js"></script>
+  </body>
+</html>
