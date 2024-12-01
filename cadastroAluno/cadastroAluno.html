@@ -30,29 +30,29 @@
                     <form id="cadastro-form">
                         <div id="form1">
                             <label id="nome" class="label-container" for="nome">Nome
-                                <input type="text" id="nome" onblur="handleName(this)">
+                                <input type="text" id="nome" onblur="handleField(this)">
                                 <p id="errorNome"></p>
                             </label>
                         
                             <label id="email" class="label-container" for="email">E-mail:
-                                <input type="email" id="email" onblur="handleEmail()">
+                                <input type="email" id="email" onblur="handleField(this)">
                                 <p id="errorNome"></p>
                             </label>
                         </div>
 
                         <div id="form1">
                             <label class="label-container" for="CPF">CPF:
-                                <input type="text" id="CPF" onblur="handleCPF()">
+                                <input type="text" id="CPF" onblur="handleField(this)">
                             </label>
                             
                             <label class="label-container" for="RA">RA:
-                                <input type="text" id="RA" onblur="handleRA()">
+                                <input type="text" id="RA" onblur="handleField(this)">
                             </label>
                         </div>
 
                         <div id="form2">
                             <label class="label-container" for="unidade">
-                                <select name="unidade" id="unidade" onchange="handleUnidade()">
+                                <select name="unidade" id="unidade" onchange="handleField(this)">
                                     <option value="" selected disabled>Selecione a unidade</option>
                                     <option value="atibaia">Atibaia</option>
                                     <option value="guarulhos">Guarulhos</option>
@@ -61,7 +61,7 @@
                             </label>
 
                             <label class="label-container" for="curso">
-                                <select name="curso" id="curso" onchange="handleCurso()">
+                                <select name="curso" id="curso" onchange="handleField(this)">
                                     <option value="" selected disabled>Selecione o curso</option>
                                     <option value="dsm">DSM - Desenvolvimento de Software Multiplataforma</option>
                                     <option value="ads">ADS - Análise e Desenvolvimento de Sistemas</option>
@@ -69,7 +69,7 @@
                             </label>
 
                             <label class="label-container" for="semestre">
-                                <select name="semestre" id="semestre" onchange="handleSemestre()">
+                                <select name="semestre" id="semestre" onchange="handleField(this)">
                                     <option value="" selected disabled>Selecione o semestre</option>
                                     <option value="sem1">1° SEMESTRE</option>
                                     <option value="sem2">2° SEMESTRE</option>
@@ -83,11 +83,11 @@
 
                         <div id="form1">
                             <label class="label-container" for="senha">Senha:
-                                <input type="password" id="senha" onchange="handleSenha()">
+                                <input type="password" id="senha" onchange="handleField(this)">
                             </label>
                             
                             <label class="label-container" for="confirme">Confirme sua senha:
-                                <input type="password" id="confirme" onchange="handleConfirme()">
+                                <input type="password" id="confirme" onchange="handleField(this)">
                             </label>
                         </div>
 
