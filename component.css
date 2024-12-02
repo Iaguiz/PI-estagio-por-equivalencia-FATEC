@@ -71,6 +71,15 @@ body {
    width: 300px;
 }
 
+select{
+    background-color: white;
+    border: 1px solid rgb(122, 122, 122);
+}
+input{
+    border: 1px solid rgb(122, 122, 122);
+
+}
+
 .label-container {
     display: flex;
     flex-direction: column;
@@ -188,7 +197,7 @@ button:hover {
     padding: 42px;
 }
 
-#errorNome{
+#errorNome, #errorSenha{
     color: red;
     display: hidden;
 }
