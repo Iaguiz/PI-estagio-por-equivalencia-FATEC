@@ -197,9 +197,12 @@ button:hover {
     padding: 42px;
 }
 
-#errorNome, #errorSenha{
-    color: red;
-    display: hidden;
+.label-container{
+    p{
+        color: red;
+        display: hidden;
+
+    }
 }
 
 @media (max-width: 768px) {

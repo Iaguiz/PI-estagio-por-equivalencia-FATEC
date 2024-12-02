@@ -29,26 +29,26 @@
                     <h1 class="titulo">Aluno, faça seu cadastro</h1>
                     <form id="cadastro-form">
                         <div id="form1">
-                            <label id="nome" class="label-container" for="nome">Nome
+                            <label class="label-container" for="nome">Nome
                                 <input type="text" id="nome" onblur="handleField(this)">
                                 <p id="errorNome"></p>
                             </label>
                         
-                            <label id="email" class="label-container" for="email">E-mail:
+                            <label class="label-container" for="email">E-mail:
                                 <input type="email" id="email" onblur="handleField(this)">
-                                <p id="errorNome"></p>
+                                <p id="errorEmail"></p>
                             </label>
                         </div>
 
                         <div id="form1">
                             <label class="label-container" for="CPF">CPF:
                                 <input type="text" id="CPF" onblur="handleField(this)">
-                                <p id="errorNome"></p>
+                                <p id="errorCPF"></p>
                             </label>
                             
                             <label class="label-container" for="RA">RA:
                                 <input type="text" id="RA" onblur="handleField(this)">
-                                <p id="errorNome"></p>
+                                <p id="errorRA"></p>
                             </label>
                         </div>
 
@@ -60,7 +60,7 @@
                                     <option value="guarulhos">Guarulhos</option>
                                     <option value="braganca">Bragança Paulista</option>
                                 </select>
-                                <p id="errorNome"></p>
+                                <p id="errorUni"></p>
                             </label>
 
                             <label class="label-container" for="curso">
@@ -69,7 +69,7 @@
                                     <option value="dsm">DSM - Desenvolvimento de Software Multiplataforma</option>
                                     <option value="ads">ADS - Análise e Desenvolvimento de Sistemas</option>
                                 </select>
-                                <p id="errorNome"></p>
+                                <p id="errorCurso"></p>
                             </label>
 
                             <label class="label-container" for="semestre">
@@ -82,14 +82,14 @@
                                     <option value="sem5">5° SEMESTRE</option>
                                     <option value="sem6">6° SEMESTRE</option>
                                 </select>
-                                <p id="errorNome"></p>
+                                <p id="errorSem"></p>
                             </label>
                         </div>
 
                         <div id="form1">
                             <label class="label-container" for="senha">Senha:
                                 <input type="password" id="senha" onblur="handleField(this)">
-                                <p id="errorNome"></p>
+                                <p id="errorSenha1"></p>
                             </label>
                             
                             <label class="label-container" for="confirme">Confirme sua senha:
@@ -99,7 +99,7 @@
                         </div>
 
                         <div id="botoes">
-                            <button class="button-primary" id="botao">CRIAR CONTA</button>
+                            <button class="button-primary" id="botao" onclick="handleCreateAccount()">CRIAR CONTA</button>
                         </div>
                     </form>
                 </section>

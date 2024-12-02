@@ -4,9 +4,7 @@ function handleField(actualElement){
     if(input.length < 1 || !input){
         errorField.innerText="* Este campo é obrigatório";
         errorField.style.display = 'flex';
-        console.log('está vazio');
         return;
     }    
     errorField.style.display = 'none';
-    console.log('tem mais de um caracter');
 }
